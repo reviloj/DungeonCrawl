@@ -1,0 +1,24 @@
+
+#menuBar{
+    margin: auto;
+    width: 800px;
+    border: 2px solid grey;
+    padding: 30px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    border-radius: 4px;
+}
+
+#animationBox{
+    margin: auto;
+    display: block;
+    width: 400px;
+    height: 400px;
+    border: solid 3px blue;
+    overflow: hidden;
+    position: relative;
+}
+
+#output{
+    position: absolute;
+    image-rendering: pixelated;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
+    </head>
+
+    <body onload="onLoad()">
+        <div id="menuBar">
+                <h1>Sprite Sheet Animator</h1>
+                <table>
+                    <tr>
+                        <td>Image Grid: </td>
+                        <td><input id="cellWidth" type="text" placeholder="Cell Width"></td>
+                        <td><input id="cellHeight" type="text" placeholder="Cell Height"></td>
+                    </tr>
+                    <tr>
+                        <td>Animation To Play: </td>
+                        <td><input id="startRow" type="text" placeholder="Row Num"></td>
+                        <td><input id="animSpeed" type="text" placeholder="Milliseconds per Frame"></td>
+                    </tr>
+                    <tr>
+                        <td>Upload Image: </td>
+                        <td><input type="file"  accept="image/*" id="spriteSheetInput" onchange="loadSpriteSheet(event)"/></td>
+                        <td><button id="updateSpriteSheet" onclick="updateSpriteSheetPos()" type="button">Update</button></td>
+                    </tr>
+                    <tr>
+                        <td>Animation Controls: </td>
+                        <td><button id="runAnim" onclick="runAnimation()" type="button">Run Animation</button></td>
+                        <td><button id="stopAnim" onclick="stopAnimation()" type="button">Stop Animation</button></td>
+                        <td><input id="animZoom" type="text" placeholder="Zoom"></td>
+                    </tr>
+                    <tr>
+                        <td>View: </td>
+                        <td><input id="goX" type="text" placeholder="Cell Column"></td>
+                        <td><input id="goY" type="text" placeholder="Cell Row"></td>
+                        <td><button id="stopAnim" onclick="gotoCell()" type="button">View Cell</button></td>
+                    </tr>
+                </table>
+        </div>
+        <div id="animationBox">
+            <img id="output"/>
+        </div>
+    </body>
+
+</html>
+
+
